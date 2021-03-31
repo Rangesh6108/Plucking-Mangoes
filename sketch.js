@@ -29,12 +29,12 @@ function setup() {
 	stone=new Stone(105,845,30);
 	sling=new Slingshot(stone.body,{x:105, y:841});
 	mango1=new Mango(1033,481,50);
-	mango2=new Mango(762,604,50);
-	mango3=new Mango(890,520,50);
-	mango4=new Mango(988,620,50);
-	mango5=new Mango(858,632,50);
-	mango6=new Mango(1110,587,50);
-	mango7=new Mango(1198,575,50);
+	mango2=new Mango(762,604,30);
+	mango3=new Mango(890,520,40);
+	mango4=new Mango(988,620,60);
+	mango5=new Mango(858,632,30);
+	mango6=new Mango(1110,587,40);
+	mango7=new Mango(1198,575,55);
 
 
 	Engine.run(engine);
@@ -46,6 +46,10 @@ function draw() {
   rectMode(CENTER);
   background(bg);
   
+  	fill("magenta");
+    textSize(25);
+	text("Press SPACE to get another chance to play!! 	:)",10,224);
+
 	boy.display();
 	tree.display();
 	ground.display();
